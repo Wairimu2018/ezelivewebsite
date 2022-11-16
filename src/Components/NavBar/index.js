@@ -10,7 +10,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from "./NavbarElements";
+} from "./NavBarElement";
 import "./../../App.css";
 
 export const Navbar = ({ toggle }) => {

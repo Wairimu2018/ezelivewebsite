@@ -1,21 +1,24 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Footer from "../Components/Footer";
 import Signin from "../Components/Signin";
+import { Navbar } from "./../Components/NavBar";
+import { Sidebar } from "./../Components/SideBar";
 
 const SigninPage = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toogle = () => {
-        setIsOpen(!isOpen);
-    };
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-
-return (
+  return (
     <>
-
-    <Footer />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <Signin />
+      <Footer />
     </>
-);
+  );
 };
 
 export default SigninPage;

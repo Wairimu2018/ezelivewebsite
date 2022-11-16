@@ -6,15 +6,16 @@ import {
     HeroContent,
     HeroBtnWrapper,
     ArrowForward,
-    ArrowRight,
+    // MdKeyboardArrowRight,
+    // ArrowRight,
 } from "./HeroSectionElement";
-import { ButtonR } from "./ButtonElements";
+import { ButtonR } from "./../ButtonElements";
 // import Video from "./videos/bgvideo.mp4";
 import "../..//App.css";
-import { hover } from "@testing-library/user-event/dist/hover";
+// import { hover } from "@testing-library/user-event/dist/hover";
 
 const HeroSection =() => {
-    cont [hover, setHover] = useState(false);
+    const [hover, setHover] = useState(false);
 
     const onHover =() => {
         setHover(!hover);
@@ -30,7 +31,7 @@ const HeroSection =() => {
                 </p>
                 <HeroBtnWrapper>
                 <ButtonR to="/signin" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Get started hover ? <ArrowForward />
           </ButtonR>
                 </HeroBtnWrapper>
             </HeroContent>

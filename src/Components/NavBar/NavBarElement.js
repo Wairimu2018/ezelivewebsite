@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
-import { findByLabelText } from '@testing-library/react'
-import { isContentEditable } from '@testing-library/user-event/dist/utils'
 
 export const Nav = styled.nav`
     //background: #000;

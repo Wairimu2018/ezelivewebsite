@@ -7,9 +7,9 @@ import SigninPage from "./Pages/Signin";
 function App() {
   return (
     <Router>
-      {/* <Switch> */}
-        <Route path="/" component={Home} exact />
-        <Route path="/Signin" component={SigninPage} exact />
+       {/* <Switch>  */}
+        <Route path="/" Component={Home} exact />
+        <Route path="/Signin" Component={SigninPage} exact />
       {/* </Switch> */}
     </Router>
   );

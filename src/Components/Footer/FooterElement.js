@@ -1,4 +1,3 @@
-import { findNonSerializableValue } from "@reduxjs/toolkit";
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
